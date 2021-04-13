@@ -51,6 +51,15 @@ a {
 	width: 750px;
 }
 
+/* Assignment 1 */
+.cookiecutters {
+  Display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+/* Footer 1 */
 .footer {
     width: 1100px;
     float: left;
