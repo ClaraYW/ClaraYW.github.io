@@ -46,6 +46,10 @@ a {
   text-decoration: none;
 }
 
+[data-stl-url] {
+	height: 500px;
+	width: 750px;
+}
 
 .footer {
     width: 1100px;
