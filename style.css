@@ -52,10 +52,14 @@ a {
 }
 
 /* Assignment 1 */
-.cookiecutters {
+.cookie-cutters {
   Display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.project-description{
+  background-color:#E8C9B9;
 }
 
 
