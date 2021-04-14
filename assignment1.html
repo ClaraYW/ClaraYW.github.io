@@ -22,15 +22,15 @@
             
             </div>
             
-            <div class="divider"> </div>
+            <hr>
 
             <h2> Project Description </h2>
-            <h3> Cherry Flower </h3>
+            <h3> No.1 Cherry Flower </h3>
             <h4>Image Preparation:</h4>
-            <img src="assets/CheryFlowerProcess-02.png" width=400>
+            <img src="assets/CheryFlowerProcess-02.png" width=800>
             <ol>
-                <li> I first find a single cherry flower image online. (I used a real image instead of a clipart so that the shape can be more nature.) </li>
-                <li> I removed the background in photoshop, and imported to illustrator to convert it into victor image </li>
+                <li> I first downloaded a png cherry flower image online and used photoshop to remove the background. </li>
+                <li> I then imported the background removed png to illustrator to convert it into victor image. </li>
                 <li> I exported the victor image as dxf and imported to Rhino. </li>
             
             </ol>
@@ -40,6 +40,7 @@
             </ul>
             
             <h4>3D Modeling:</h4>
+           
             <ol>
 
                 <li>I first scaled down the image to a more realistic cookie cutter size</li>
@@ -60,9 +61,80 @@
                         <li>To make the stamen stamp, I attached the stamen and solid flower petals and the handle together. </li>
                     </ol>
                 </li>
+                <li>
+                    Direction of the stamp. The 5 petals are not identical, so user need to put the stamp in in an exact angle. In order to make this easier, I added a sphere to both the cookie cutter and the stamp to indicate which petal connects to which, and which side of the cookie cutter should be up. 
+                </li>
             
             </ol>
             
+            
+            <h3> No.2 Minion </h3>
+            <h4>Image Preparation:</h4>
+            <img src="assets/Minion_imageprep_v2.png" width=400>
+            <p> I thought since this is my second cookie cutter, things will be easier, but I totally underestimated all kinds of new issues I later ran into. </p>
+            <ol>
+                <li> I find a minion png with transparent background. (Saved sometime to not have to make it transparent this time. 😁) </li>
+                <li> When converting it to victor image in illustrator, I also want to make some modification to the image to simplify it (e.g. remove his hair and pants).  </li>
+                <li> I exported the victor image as dxf and imported to Rhino. </li>
+            
+            </ol>
+
+            <ul>
+            Challenge: It took me so much time to convert minion image. First, I forgot to click expand after I did image trace, so I struggled with making changes to it. Then, in order to cut it's hair and pants, I needed to use knife, scissor, shape builder tools which were not the tools I normally use, so I took sometime to learn about the tool and apply it to my work. Lastly, I had to fix the path of the images as I want them to be as clean as possible before import it to Rhino. 
+            </ul>
+            
+            <h4>3D Modeling:</h4>
+
+            <img src="assets/Minion_3D_WIP.png" width=800>
+            <ol>
+
+                <li>I scaled down the image to a more realistic cookie cutter size</li>
+                <li>Then I extrudeCurv the main body, and the goggle with eyeballs with different height. (I was going to make them the same height, but at Jinchao's office hour, he reminded me that I probably don't want them to be connected as that will make cut through the cookies. Good reminder 👍. ) </li>
+                <li>I created two rectangles then extrude them to connect the goggle, eyeballs, mouth to the main body.</li>
+                <li> The mouth took me a while to make it work as I was struglging with turning a single curve to a surface. (see challenge below for details.) </li>
+                <li>I then used boolean union to connect all the parts together. </li>
+
+            </ol>
+
+            <ul>
+                Challenge: The biggest challenge I had here was with the minion's mouth. The mouse was imported with just one thin path, which is consider a curve in Rhino. I drewed a few more curves thinking I can join them and then extrudeCurve it. I coudln't get the join curve working at all. After lots of googling and trying to make join work, I decided to try a different approach. I searched how to turn curves into a surface instead, and I learned a new command "surface from planar curves". I was able to turn the mouth into 3D in the end.  
+            </ul>
+
+
+            <h3> No.3 Flamingo </h3>
+            <h4>Image Preparation:</h4>
+
+            <div class="flamingo-imageprep">
+                <img src="assets/OriginalFlamingo.png" width=300>
+                <img src="assets/Flamingo_imageprep_v1.png" width=600>
+            </div>
+            <p> Again, this third cookie cutter also took me way longer than I thought. I think it has something to do with me always pick image that required extra work. 😂 </p>
+            <ol>
+                <li> I downloaded a Flamingo png image online </li>
+                <li> When convert it to victor image in illustrator, I spent time to merge and remove some of the shapes which turned out to be separated after it's been convereted. </li>
+                <li> Lots of time were spent on trying to adjust the parts of the legs that are too thin and make it thicker and fix messy and duplicate paths.</li>
+        
+            
+            </ol>
+            
+            <h4>3D Modeling:</h4>
+
+            <img src="assets/f" width=800>
+            <ol>
+
+                <li>I scaled down the image to a more realistic cookie cutter size</li>
+                <li>Then I extrudeCurv the main body, and the goggle with eyeballs with different height. (I was going to make them the same height, but at Jinchao's office hour, he reminded me that I probably don't want them to be connected as that will make cut through the cookies. Good reminder 👍. ) </li>
+                <li>I created two rectangles then extrude them to connect the goggle, eyeballs, mouth to the main body.</li>
+                <li> The mouth took me a while to make it work as I was struglging with turning a single curve to a surface. (see challenge below for details.) </li>
+                <li>I then used boolean union to connect all the parts together. </li>
+
+            </ol>
+
+            <ul>
+                Challenge: The biggest challenge I had here was with the minion's mouth. The mouse was imported with just one thin path, which is consider a curve in Rhino. I drewed a few more curves thinking I can join them and then extrudeCurve it. I coudln't get the join curve working at all. After lots of googling and trying to make join work, I decided to try a different approach. I searched how to turn curves into a surface instead, and I learned a new command "surface from planar curves". I was able to turn the mouth into 3D in the end.  
+            </ul>
+
+
         </div>
 
         <script src="https://cdn.jsdelivr.net/gh/hellojeffhall/simple-stl-viewer@main/dist/simple-stl-viewer.min.js"></script> 
