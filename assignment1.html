@@ -26,7 +26,7 @@
 
             <h2> Project Description </h2>
             <h3> Cherry Flower </h3>
-            <p>Image Preparation:</p>
+            <h4>Image Preparation:</h4>
             <img src="assets/CheryFlowerProcess-02.png" width=400>
             <ol>
                 <li> I first find a single cherry flower image online. (I used a real image instead of a clipart so that the shape can be more nature.) </li>
@@ -39,7 +39,29 @@
             Challenges: The stamen in the middle was a bit complex in the original image, and does not turn into victor nicely, so I abandoned the original stamen, and used pen tool to drew some freehand stamens. I wanted to follow the nature feeling, so I made it asymmetrical. 
             </ul>
             
-            <p>3D Modeling:</p>
+            <h4>3D Modeling:</h4>
+            <ol>
+
+                <li>I first scaled down the image to a more realistic cookie cutter size</li>
+                <li>Then I used "join" for the flower petals to make sure all the path are connected.</li>
+                <li>I used rebuild command to check the total number of points, it was not too many, so I did not make adjustments there.</li>
+                <li>I then used extrudeCurv command to turn it into polysurface.</li>
+                <li>I want to allow user to create the stamen pattern on the cookie, so I was thinking of ways to connect the stamen.  I thought if connect using thin line between the stamen and the petals, it will impact the look of the cookie with the thin lines.
+                    <ol>
+                        <li>Idea 1: make the stamen tall so user can use it as a stamp and  stamp it in inside the flower mode. Problems:
+                            <ol>
+                                <li>The stamen have thin middle part, might easily break when pressure applies. </li>
+                                <li>The stamen might not be centered due to the amount of free room inside the flower mode.</li>
+                            </ol>
+                        </li>
+                        <li>To address the two problems above, I thought if I have the stamen attach to a solid flower petals that fits in exactly, then user will always have that stemen centered, as the solid petals will also fit into the hollow cookie cutter. </li>
+                        <li>Then I thought about user will need a handle to stamp it like a stamp after you press the flower ring, so I added a cylinder. </li>
+                        <li>I wanted to make the cylinder easier to grab, so I indented two side with 2 boxes toward the top of the cylinder. </li>
+                        <li>To make the stamen stamp, I attached the stamen and solid flower petals and the handle together. </li>
+                    </ol>
+                </li>
+            
+            </ol>
             
         </div>
 
