@@ -3,6 +3,11 @@ html, body {
   padding: 0 0 0 0;
   margin: 0;
   font-family: 'helvetica', 'arial', 'sans';
+  padding: 30px 30px 30px;
+  /* background: #fff; */
+  background-color: rgb(231, 248, 246);
+
+  color: #000;
 }
 
 h1,h2,h3,h4 {
@@ -14,11 +19,9 @@ a {
   color: #000;
 }
 
-.header {
-  background: #fff;
-  color: #000;
-  height: 500px;
-  padding: 30px 30px 30px;
+
+.demo-section {
+  /* background-color: rgb(231, 248, 246); */
 }
 
 .header h1 {
@@ -33,6 +36,11 @@ a {
   width: 350px;
   height: 350px;
   float: left;
+}
+
+.assignment img {
+  width: 350px;
+  height: 350px;
 }
 
 .assignment a {
@@ -60,15 +68,17 @@ a {
 .cookie-cutters [data-stl-url] {
   box-shadow: 1px 1px 4px 0px rgb(213, 211, 211);
   border-radius: 4px;
+  background-color: white;
 }
 .cookie-cutters span {
   padding-top: 30px;
+  padding-bottom: 50px;
   font-size: 32px;
   font-weight: 800;
 }
 
 hr {
-  margin: 60px 0 60px 0;
+  margin-bottom: 60px;
 }
 
 h2{
