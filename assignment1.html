@@ -127,10 +127,8 @@
         <p> Again, this third cookie cutter also took me way longer than I thought. I think it has something to do with me always pick image that required extra work. 😂 </p>
         <ol>
             <li> I downloaded a Flamingo png image online </li>
-            <li> When convert it to victor image in illustrator, I spent time to merge and remove some of the shapes which turned out to be separated after it's been convereted. </li>
+            <li> When convert it to victor image in illustrator, I spent time to merge and remove some of the shapes which turned out to be separated after it's been convereted to victor image. </li>
             <li> Lots of time were spent on trying to adjust the parts of the legs that are too thin and make it thicker and fix messy and duplicate paths.</li>
-    
-        
         </ol>
         
         <h4>3D Modeling:</h4>
@@ -142,16 +140,15 @@
         </div>
         <ol>
 
-            <li>I scaled down the image to a more realistic cookie cutter size</li>
-            <li>Then I extrudeCurv the main body, and the goggle with eyeballs with different height. (I was going to make them the same height, but at Jinchao's office hour, he reminded me that I probably don't want them to be connected as that will make cut through the cookies. Good reminder 👍. ) </li>
-            <li>I created two rectangles then extrude them to connect the goggle, eyeballs, mouth to the main body.</li>
-            <li> The mouth took me a while to make it work as I was struglging with turning a single curve to a surface. (see challenge below for details.) </li>
-            <li>I then used boolean union to connect all the parts together. </li>
+            <li>Scaled the imported victor. </li>
+            <li>Offset the curves: I ran into issues here due to some of the curves where too closed to each other (e.g., the corner between the toes) which caused self intersecting curves that cannot be extruded. Most time are speding on adjusting the points on the curve and make sure cureves don't intersetct and leaves enough room for offsetting. </li>
+            <li>After fixed all the visible interseted curves, Rhino did allow to extrude, however, the model turned out to be defected as showned in image 2 and 3 above. So I continued try to simplify the points on the curve, offset, extrude, check quality, repeat, until I get the final model that looks just right. </li>
+            
 
         </ol>
 
         <ul>
-            Challenge: The biggest challenge I had here was with the minion's mouth. The mouse was imported with just one thin path, which is consider a curve in Rhino. I drewed a few more curves thinking I can join them and then extrudeCurve it. I coudln't get the join curve working at all. After lots of googling and trying to make join work, I decided to try a different approach. I searched how to turn curves into a surface instead, and I learned a new command "surface from planar curves". I was able to turn the mouth into 3D in the end.  
+            Challenge: due to some curves are very close to each other, ran into self intersecting curves issues when offset. Later also ran into defected polysurface after extrudeCurv, I further simplified the cureves and points and fixed all the issues. 
         </ul>
 
 
