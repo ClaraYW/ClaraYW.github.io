@@ -7,7 +7,7 @@ html, body {
   /* background: #fff; */
   background-color: rgb(231, 248, 246);
 
-  color: #1A1A1A;
+  color: #252525;
 }
 
 h1,h2,h3,h4 {
@@ -24,7 +24,30 @@ h3{
   font-weight:700;
 }
 a {
-  color: #1A1A1A;
+  color: #252525;
+  text-decoration: none;
+}
+a:hover{
+  color: #6c6c6c;
+}
+
+.topnav{
+  overflow: hidden;
+}
+.topnav a{
+  float: right;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 12px;
+  padding-left: 32px;
+  padding-bottom: 60px;
+
+}
+
+.topnav a.nav-active {
+  font-weight: 700;
 }
 
 
@@ -32,7 +55,7 @@ a {
 .header h1 {
   font-size: 48px;
   text-align: left;
-  color: #545454;
+  color:#545454 ;
   }
 .header {
   display: flex;
@@ -63,15 +86,6 @@ a {
   height: 500px;
 }
 
-.assignment a {
-    color: #1b1b1b;
-    text-decoration: none;
-}
-
-.assignment a:hover {
-  color: rgb(77, 79, 80);
-  text-decoration: none;
-}
 
 [data-stl-url] {
 	height: 500px;
@@ -94,6 +108,10 @@ a {
   padding-bottom: 50px;
   font-size: 32px;
   font-weight: 800;
+}
+
+a.download{
+  text-decoration:underline;
 }
 
 hr {
