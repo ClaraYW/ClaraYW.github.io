@@ -2,55 +2,74 @@
 html, body {
   padding: 0 0 0 0;
   margin: 0;
-  font-family: 'helvetica', 'arial', 'sans';
+  font-family: 'heebo', 'helvetica', 'sans';
   padding: 30px 30px 30px;
   /* background: #fff; */
   background-color: rgb(231, 248, 246);
 
-  color: #000;
+  color: #1A1A1A;
 }
 
 h1,h2,h3,h4 {
-  font-family: 'helvetica', 'arial', 'sans';
-  }
+  font-family: 'heebo', 'helvetica', 'sans';
+}
 
+h2{
+  font-size: 24px;
+  padding-top: 60px;
+}
 
+h3{
+  font-size: 16px;
+  font-weight:700;
+}
 a {
-  color: #000;
+  color: #1A1A1A;
 }
 
 
-/* .demo-section {
-   background-color: rgb(231, 248, 246); 
-} */
 
 .header h1 {
-  font-size: 50px;
+  font-size: 48px;
+  text-align: left;
+  color: #545454;
   }
+.header {
+  display: flex;
+  flex-direction: row;
+}
 
-.assignment {
-  font-size: 12px;
-  line-height: 24px;
-  font-family: 'helvetica', 'arial', 'sans';
-  padding: 20px 20px 20px 30px;
-  width: 350px;
-  height: 350px;
-  float: left;
+.header img{
+  width: 60%;
+  align-self: flex-start;
+  }
+.header-content{
+  align-self: flex-start;
+  flex: 1 1 auto;
+  margin-right: 50px;
+}
+
+.assignments {
+  display:flex;
+  padding-top: 80px;
+}
+
+.assignment{
+  margin-right: 20px;
 }
 
 .assignment img {
-  width: 350px;
-  height: 350px;
+  width: 500px;
+  height: 500px;
 }
 
 .assignment a {
-    color: #000;
+    color: #1b1b1b;
     text-decoration: none;
 }
 
 .assignment a:hover {
-  background: #F06;
-  color: #F06;
+  color: rgb(77, 79, 80);
   text-decoration: none;
 }
 
@@ -79,16 +98,6 @@ a {
 
 hr {
   margin-bottom: 60px;
-}
-
-h2{
-  font-size: 24px;
-  padding-top: 60px;
-}
-
-h3{
-  font-size: 16px;
-  font-weight:700;
 }
 
 h4{
