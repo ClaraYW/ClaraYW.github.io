@@ -16,15 +16,265 @@
             <a href="index.html">HOME</a>
         </div>
 
-        <div class="header">
-            <h1>Example Student's Assignment 2!</h1>
-            <p>
-            <img src="red-panda.jpg" width=400></a>
-            </p>
-            <p>
-            Here is all the documentation for assignment 2!
-            </p>
+        <div class="demo-section">
+            <h1>My Very First 3D Prints</h1>
+
+            <img class="project-hero-image" src="assets/assignment2/hw2-heroimage.jpg">
+            </div>
         </div>
+
+
+
+        <a class="download" href="assets/assignment1/Cookie_Cutters.3dm" download>Download Rhono Model File</a>
         
+        <div class="documentation">
+            <div class="two-columns">
+                <h2> Setting Up</h2>
+
+                <div class="content">
+                    <h3> Printer Assembling Check</h3>
+                    <p>
+                        I was lucky that my friend lended me a 3D printer. It is Creality Ender 3 Pro. Since the printer was already assemblied. I decided to still watch the assembling video to understand what are the part of a 3D printer. My other main task here is to check against the "gotchas" checklist to make sure things were set up correctly.   
+                    </p>
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment2/SettingUp/Extrusion_squareness_.jpg"> 
+                            <span>Extrusion Squareness Check</span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/assignment2/SettingUp/Leadscrew_alignment.jpg"> 
+                            <span>Z Leadscrew Alignment Check</span>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment2/SettingUp/Power_Supply_Voltage.jpg"> 
+                            <span>Power Supply Voltage Check</span>
+                        </div >
+
+                        <div class="image-container">
+                            <img src="assets/assignment2/SettingUp/Extruder_Check.jpg">
+                            <span>Wiggling Extruder Check</span>
+                        </div>
+
+                    </div>
+                    <h3> Level the Bed</h3>
+                    <p>
+                        It took about 2.5 hours to get the level right including watching different tutorials, test with paper, make adjustments and test with test print models. When I tested with paper, 
+                        I origianlly adjust the distance between the nozzel and the bed so that a sticky note can move freely with slight resistence. However, through one of the paper testing, I noticed the center of the bed is a bit dented. 
+                        With the test print, as showen in below images, it had adhesion issues, so I had to tighend it up a few times to address that.I was worry about the nozzel was too close to the bed, as this the final trial, the paper cannot move around freely between the nozzel and the bed unless I use two hands to pull and push, byt it turns out that distance was close to perfect as shown in the final testing. 
+                    </p>
+
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment2/BedLevelTesting/BedLevelTesting_v1.jpg"> 
+                            <span>First Attempt </span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/assignment2/BedLevelTesting/BedLevelTesting_v2.jpg"> 
+                            <span>Second Attempt </span>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment2/BedLevelTesting/BedLevelTesting_v3.jpg"> 
+                            <span>Third Attempt </span>
+                        </div >
+
+                        <div class="image-container">
+                            <img src="assets/assignment2/BedLevelTesting/BedLevelTesting_vf.jpg">
+                            <span>Finally!</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           
+       
+
+            <div class="two-columns">
+                <h2> 2CM Cubes</h2>
+
+                <div class="content">
+                    <h3> Model / Slice / Print</h3>
+                    <p>
+                        I modeled the a 2 square cm cube in Rhino, then sliced them in Cura4.8 with different settings. After that, printed with Ender 3 pro and measured each cube with clipers. 
+                        I tried different build plate adhesion, skirt, brim and none. Brim did the best job to help making the bottom of the object looks nice as it helped to make sure the melted plastic sticks well each layer as the nozzel goes up. 
+                        I also adjusted the initial layer print speed to 10mm/s to help with adhesion issues.
+                    </p>
+
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment2/2cm_cubes/lowQ.jpg"> 
+                            <span>2cm Cube Low Quality </span>
+                            <span>W:20.2mm L:20.33mm H:20mm </span>
+                            <span>25m 51s </span>
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/assignment2/2cm_cubes/standardQ.jpg"> 
+                            <span>2cm Cube Standard Quality </span>
+                            <span>W:20.04mm L:20.08mm H:20.01mm </span>
+                            <span>32m 49s </span>
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/assignment2/2cm_cubes/superQ.jpg"> 
+                            <span>2cm Cube Super Quality </span>
+                            <span>W:19.97mm L:19.97mm H:19.81mm </span>
+                            <span>51m 7s </span>
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/assignment2/2cm_cubes/concentric.jpg"> 
+                            <span>2cm Cube Standard Concentric </span>
+                            <span>W:20.04mm L:20.13mm H:19.98mm </span>
+                            <span>31m 54s </span>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="two-columns">
+                <h2> 3CM Tubes</h2>
+
+                <div class="content">
+                    <h3> Model / Slice / Print</h3>
+                    <p>
+                        In rhino, I modeled two 3 square cm tubes, one with a wall of 0.8mm thick, the other with a wall of 1.6mm thick. I then sliced them in Cura4.8 with different settings and printed with Ender 3 pro and measured each cube with clipers. 
+                        I originally thought I could adjust the wall thickness in Cura by changing the wall line count. After printed out with the different wall line count setting,  I noticed there weren't much difference between the size, it certainly wasn't double. 
+                        Junchao helped to explained to me that the wall line count in Cura is auto calcualted based on the desired total thickness of the object, it's not going to double the thickness of the tube. I then made another model in Rhino, offset the surface with twice of the value, and printed the version two. 
+                    </p>
+
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment2/3cm_tubes/singlewall.jpg"> 
+                            <span>3cm Tube Single Wall </span>
+                            <span>ID:29.86mm T:0.97mm H:29.89mm </span>
+                            <span>31m 49s </span>
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/assignment2/3cm_tubes/doublewall.jpg"> 
+                            <span>3cm Tube Double Wall Random z-seam Alignment </span>
+                            <span>ID:29.37mm T:1.85mm H:29.94mm </span>
+                            <span>44m 28s </span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="two-columns">
+                <h2> 3CM Cylinders</h2>
+
+                <div class="content">
+                    <h3> Model / Slice / Print</h3>
+                    <p>
+                        Below are the key takeaways for these sets of work:
+                    </p>
+                    <ul>
+                        <li> Increasing the tolerance level can create plat surface to a supposed to be rounded surface. </li>
+                        <li> You can define the Z-steam alignment either use the shortest line or random or define a specific posiiton.</li>
+                        <li> Infill Density impacts the speed of the print, lower density will print faster.</li>
+                        <li> Spiralize Outer Countour was cool effect. You can easily make a cup with this. </li>
+                        <li> Played with a few different support type, good to see what are the available settings in Cura for support. </li>
+                    </ul>
+
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment2/3cm_cylinders/T_0.1.jpg"> 
+                            <span>3cm Cylinder with 0.1 Tolerance </span>
+                            <span>D:29.67mm H:29.77mm </span>
+                            <span>48m 19s </span>
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/assignment2/3cm_cylinders/T-0.001.jpg"> 
+                            <span>3cm Cylinder with 0.001 Tolerance </span>
+                            <span>D:29.94mm H:29.95mm </span>
+                            <span>1h 4m 18s </span>
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/assignment2/3cm_cylinders/spiralize_outer_contour.jpg"> 
+                            <span>3cm Cylinder Spiralize Outer Contour </span>
+                            <span>D:29.83mm H:29.89mm </span>
+                            <span>35m 3s </span>
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/assignment2/3cm_cylinders/Sideway.jpg"> 
+                            <span>3cm Cylinder Sideway with Support </span>
+                            <span>D:29.91mm H:30.09mm </span>
+                            <span>1h 2m 56s </span>
+                        
+                        </div>
+                    </div>
+                
+                 </div>
+            </div>
+
+            <div class="two-columns">
+                <h2> 2CM Cube with A Hole</h2>
+
+                <div class="content">
+                    <h3> Model / Slice / Print</h3>
+                    <p>
+                        I tried 3 times for this task. I didn't finish printing the first 1 as I noticed the line was way too thin which cause it to not stick very well. 
+                    </p>
+
+                    <div class="three-columns-content-group">
+                        <div class="three-columns-content"> 
+                            <p>Attempt 1 Settings</p>
+                            <ul>
+                                <li>Standard Quality</li>
+                                <li>Line Width 0.2mm</li>
+                                <li>Wall lined width:0.2mm</li>
+                                <li>Initial Layer Speed - 20mm/s</li>
+                                <li>Brim - 10 line counts</li>
+                                <li>Z Seam Alignment - Random</li>
+                                <li>Infill Pattern - Cross</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="three-columns-content"> 
+                            <p>Attempt 2 Settings</p>
+                            <ul>
+                                <li>Increase line Width to 0.4mm</li>
+                                <li>Decrease initial Layer Speed to 10mm/s</li>
+                                <li>Increase Brim to 15 line counts</li>
+                            
+                            </ul>
+                        </div>
+
+                        <div class="three-columns-content"> 
+                            <p>Attempt 3 Settings</p>
+                            <ul>
+                                <li>Decrease innerfill line Width to 0.3mm</li>
+                                <li>Change infill pattern to grid to make it more solid</li>
+                                <li>Change top/bottom pattern to zig zag</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment2/2cm_cube_w_hole/Left_Succeed_Right_Failed.jpg"> 
+                            <span>Left Pass, Right Failed </span>                         
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment2/2cm_cube_w_hole/Passed_Cube.jpg"> 
+                            <span>Passed Version </span>  
+                            <span>33m 1s </span>                       
+                        </div>
+
+                    </div>
+
+                    <div class="image-container">
+                        <img src="assets/assignment2/2cm_cube_w_hole/2cm_cube_w_hole_measuring.png"> 
+                        <span>Measure the Passed Cube </span>  
+                        <span>W:20.03mm L:19.99mm H:19.97mm ID:9.98mm </span>
+                                             
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
