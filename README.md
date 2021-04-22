@@ -1,2 +1,2 @@
-HCDE 598 Special Topics Digital Fabrication
+Digital Fabrication
 https://clarayw.github.io/
