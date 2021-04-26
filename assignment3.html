@@ -1,0 +1,234 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Clips and Nested Objects</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+        <div class="topnav">
+            <a class="nav-active" href="assignment3.html">Clips and Nested Objects</a>
+            <a href="assignment2.html">FIRST 3D PRINTS</a>
+            <a href="assignment1.html">COOKIE CUTTERS</a>
+            <a href="index.html">HOME</a>
+        </div>
+
+        <div class="demo-section">
+            <h1>Clips and Nested Objects</h1>
+
+            <img class="project-hero-image" src="assets/assignment2/hw2-heroimage.jpg">
+            </div>
+        </div>
+
+
+
+        <a class="download" href="assets/assignment3/four_leave_clover_clip_v5.3dm" download>Download Clips Rhono File</a>
+        <a class="download" href="assets/assignment3/four_leaf_clover_clip_v5.gh" download>Download Clips Grasshopper File</a>
+        <a class="download" href="assets/assignment3/NestedSphere_v5.3dm" download>Download Nested Spheres Rhono File</a>
+        <a class="download" href="assets/assignment3/NestedSphere_v5.gh" download>Download Nested Spheres Grasshopper File</a>
+
+
+        <div class="documentation">
+            <div class="two-columns">
+                <h2> Clips</h2>
+
+                <div class="content">
+                    <h3> Bookmark Clips </h3>
+                    <p>
+                        I coulden't find any cardboards, so I decided to make some useful clips for what my housemates and I can use at home. 
+                        The first type is a small bookmark clip. 
+
+                    </p>
+
+                    <p>
+                        I combined all the leaf and the clip in Grasshopper here and printed as 1 object. The issue I ran into is that the gap of the clip 
+                        is somewhat closed, but because the gap is set to be small, I was able to easily cut out the supports to open up the gap. 
+
+                    </p>
+
+                   
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment3/Bookmark_Clips/Printed.jpg"> 
+                            <span> </span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/assignment3/Bookmark_Clips/Front.jpg"> 
+                            <span> </span>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment3/Bookmark_Clips/Back.jpg"> 
+                            <span> </span>
+                        </div >
+
+                        <div class="image-container">
+                            <img src="assets/assignment2/SettingUp/Extruder_Check.jpg">
+                            <span> </span>
+                        </div>
+
+                    </div>
+                    <div class="image-container">
+                        <img src="assets/assignment2/SettingUp/Extruder_Check.jpg">
+                        <span> Shake Test</span>
+                    </div>
+
+                    <h3> Snack Clips </h3>
+                    <p>
+                        We have lots of snacks at home and we always struggle with not have enough clips to keep them fresh, so I made different variety of the clips. 
+
+                    </p>
+
+                    <div class="three-columns-content-group">
+                        <div class="three-columns-content"> 
+                            <p>Big Four Leaf Clover Clip</p>
+                            <p>
+                                This one used the technique of printing the leaf and the clip separately.  
+                                The back of the leave is indented with a rectangle polysurface. 
+                                The front of the clip is portruding with the same size rectangle polysurface. I tried different ways to make this assemble piece. 
+                    
+                            </p>
+
+                        
+                            <ul>
+                                <li>Have the indentation on the clip instead of the flower as I thought that might make the quality comes out better without having the portruding piece. </li>
+                                <li>Tried different rotation of the clip to sit on the bed to reach optimal results. </li>
+                                <li>Adjusted the tolerance of the clip and the leaf to make them better assemble together. </li>
+                            
+                            </ul>
+
+                        </div>
+
+                        <div class="three-columns-content"> 
+                            <p> Indented Four Leaf Clover Clip </p>
+
+                            <p> I reversed this version by indented the four leaf clover pattern on the clip instead.  </p>
+                            <ul>
+                                <li>Indented the leaf on the clip instead to see if the result is better. </li>
+                                <li>This also safes time as the big leaf version was pretty but very time consuming. </li>
+                                                          
+                            </ul>
+                        </div>
+
+                       
+                    </div>
+
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment3"> 
+                            <span>    </span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/assignment3"> 
+                            <span> Shake Test </span>
+                        </div>
+
+                    </div>
+
+                    <h3> Clipboard </h3>
+                    <p>
+                        I made a difference size of the clip use to make a clipboard. This time, I learned from the previous lessons, I placed the clip side ways,
+                        so that the gap is not overhanging this time and it came out nicely. 
+                    </p>
+
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment3"> 
+                            <span>    </span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/assignment3"> 
+                            <span> Shake Test </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+           
+       
+
+            
+            <div class="two-columns">
+                <h2> Nested Spheres</h2>
+
+                <div class="content">
+                    <h3> 3 Layer Nested Spheres </h3>
+                    <p>
+                       This took me forever, I tried many different ways to do things in grasshopper as much as possible, but failed again and again to reach the ideal result. 
+                       The final result here is not super idea either, but it's definitely getting closed, and my conclusion is some of the work is just bettern done in Rhino. 
+                       I end up deleted lots of my grasshopper code and new grasshopper functions I was trying out since I was not able to make it work.    
+                    </p>
+
+                    <p>
+                        I used grasshopper for all the offset work, then baked the spheres I needed and cut them in Rhino.     
+                     </p>
+
+                    <div class="three-columns-content-group">
+                        <div class="three-columns-content"> 
+                            <p>Attempt 1</p>
+                            <p>
+                                I set up all the spheres needed, used offset surface, and built the rectangle in grasshopper as well and was able to cut it nicely, until, I realize the final object is all solid. 
+                    
+                            </p>
+
+                        </div>
+
+                        <div class="three-columns-content"> 
+                            <p> Attemp 2 + more </p>
+
+                            <p> I tried to draw a hollow sphere in grasshopper, wathed all the tutorials I could find online. First I was struggling with the "Loft" function as I was not able to connect two curves togehter. 
+                                (The trick is to "hold" shift" to add another curve, I learned that after hours later from TA"). But even after that, I still run into other issues when try to complete the whole thing in grasshopper.
+                                I reached to the point that I have to move on.   
+                            </p>
+                                
+                            
+                        </div>
+
+                        <div class="three-columns-content"> 
+                            <p> Final Attemp </p>
+
+                            <p> I end up still using the solid sphere, but did all the surface offset in Grasshopper and then bake them, and cut then in Rhino. 
+                                I printed twice to try to get better results.  
+                            </p>
+                                
+                            
+                        </div>
+
+                        
+
+                       
+                    </div>
+
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment2/3cm_tubes/singlewall.jpg"> 
+                            <span>3cm Tube Single Wall </span>
+                            
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/assignment2/3cm_tubes/doublewall.jpg"> 
+                            <span>3cm Tube Double Wall Random z-seam Alignment </span>
+                            <span>ID:29.37mm T:1.85mm H:29.94mm </span>
+                            <span>44m 28s </span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+          
+        </div>
+    </body>
+</html>
