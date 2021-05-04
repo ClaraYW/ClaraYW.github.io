@@ -1,0 +1,210 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Mesh & Lamp</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+        <div class="topnav">
+            <a class="nav-active" href="assignment4.html">MESH</a>
+            <a href="assignment3.html">CLIPS</a>
+            <a href="assignment2.html">FIRST 3D PRINTS</a>
+            <a href="assignment1.html">COOKIE CUTTERS</a>
+            <a href="index.html">HOME</a>
+        </div>
+
+        <div class="demo-section">
+            <h1>Merge Mesh</h1>
+
+            <img class="project-hero-image" src="assets/assignment4/Assignment_4_Hero.png">
+            </div>
+        </div>
+
+
+        <div class="documentation">
+            <div class="two-columns">
+                <h2> Merge Mesh</h2>
+
+                <div class="content">
+                    <h3> Fix Naked Edge of a Mesh </h3>
+                    <p>
+                        I downloaded the smiley minion file from Thingiverse. The original file has two separated parts, the front and back of the minion. 
+                        
+                    </p>
+                    <a class="download" href="https://www.thingiverse.com/thing:179106" download>Smily Minion Original STL</a>
+
+                   <p>First, I needed to clean the mesh before merging them. I noticed the 2 meshes were closed mesh, however, when run Mesh Repair, it says it's bad mesh. 
+                       I hit repair button, and also cicked around some other controls. I end up break the mesh and caused 1 naked edge occured.  </p>
+
+                    <p>I then messed around for a very long time but couldn't fix it effectively, SOS Junchao and he troubleshoot with me and we tried different methods to finally fixed it. Below are the steps we took. </p>
+                    <ol>
+                        <li>Use command + sift to select around the broken surface and delete the broken meshes</li>
+                        <li>Export the object so that all the surfaces are broken into separate pieces</li>
+                        <li>Select the broken piece and use invert command to insert select all the other pieces</li>
+                        <li>Hide the selected good pieces</li>
+                        <li>Use polyline to connect the mesh points (turn on Vertex, it helps to get the cross snap to the exact mesh point)</li>
+                        <li>Select two meshline and user the command loft to create a surface</li>
+                        <li>If step 7 didn't work as expected, convert mesh into Nurb (MeshtoNurb) then repeat step 7. (This helped to fix the less complex mesh lines where you can see the limited lines pretty clearly.)</li>
+                        <li>To fix the more complex mesh lines where there are so many lines that looks overlapping. Use "Cap" to cap all empty surfaces</li>
+                        <li>Then convert the Nurb back to mesh, and you can adjust how many surface you want to have.</li>
+                    </ol>
+
+                    <p>Causion! ⚠️ Convert Mesh to Nurb might crash your computer.</p>
+            
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment4/Mesh_Original_Minion.png"> 
+                            <span> </span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/assignment4/fixing_mesh.png"> 
+                            <span> </span>
+                        </div>
+                   
+                    </div>
+
+
+                    <h3> Merge Closed Mesh </h3>
+                    <p>
+                        I thought it would merge nicely given the two mesh are closed. But I ran into two issues. 
+                    </p>
+
+                    <p > First Attempt: I put the minion right next to each other with no overlap, after used the MeshBooleanUnion. The front and back can still be separated.</p>
+                   
+                    
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment4/meshbooleanunion.png"> 
+                            <span>    </span>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment4/after_meshunion.png"> 
+                            <span>The two mesh are still separated </span>
+                        </div>
+
+                                    
+
+                    </div>
+                   
+                    <p>Second Sttempt: I overlap the front and back for about 1mm, then used MeshBooleanUnion. It turned into a crazy monster.</p>
+
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment4/Overlap_UnionMesh.png"> 
+                            <span> Minion lost it's identity ☹️</span>
+                        </div>
+                                    
+
+                    </div>
+                   
+                    <p>Third Sttempt: I decided to just put the two parts super close together and export as a single stl file, and imported to CURA. 
+                        The thought is that they will get printed together, since the two objects are so close togehter it might get printed as one. 
+                        It totally looks like a single piece after sliced it in CURA </p>
+
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment4/Assignment_4_Hero.png"> 
+                            <span> The "Fake" Union</span>
+                        </div>
+                        
+                        <div class="image-container">
+                            <img src="assets/assignment4/fakeUnion_inCura.png"> 
+                            <span> After Sliced</span>
+                        </div>
+
+                    </div>
+
+                    <p>I did add treesupport for the final model that got sent to print. </p>
+
+                </div>
+                   
+
+            </div>
+            <div class="two-columns">
+                <h2> Lamp Part 1</h2>
+
+                <div class="content">
+                    <h3> Sketching Ideas </h3>
+                    <p>
+                       The plan is to make a square desk lamp that has objects inside, and when the light is on, the object inside will reveal. 
+                       Some other ideas are add some fancy hollow shapes on the outside so it can show some interesting patters on the wall when the light is on. 
+                    </p>
+
+                    
+                    <div class="image-container">
+                        <img src="assets/assignment4/Lamp_Part1/Sketch_Ideas.jpg"> 
+                        <span>  </span>
+                        
+                    </div>
+
+                    <h3> Test Print the Base</h3>
+                    <p>The concept of the box is that the top can be removed and it will sit on the base. There is a wall on the base to help keep the top in place once it's on.
+                        I modeled a 20mm small one to want to test the concept first. 
+                    </p>
+
+                    <p>The issue I ran into is not surprising. The top coulden't fit into the bottom. I will need to make some adjustments on the size in the next round. 
+                        To make the inner width of the top square bigger or make the bottom wall smaller.
+                    </p>
+
+                    <div class="assemble-img">
+                        
+                        <div class="image-container">
+                            <img src="assets/assignment4/Lamp_Part1/TestFail1.jpg"> 
+                            
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment4/Lamp_Part1/TestFail2.jpg"> 
+                            
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment4/Lamp_Part1/TestFail3.jpg"> 
+                            
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment4/Lamp_Part1/TestWallWidth.jpg"> 
+                            
+                        </div>
+                        
+                    </div>
+
+                    <h3> Test Print the Heart</h3>
+                    <p>I found a solid heart STL on Thingiverse, and decided to do a test print. Given it's a heart shape, I was trying to see how to best place it on the bed. 
+                        For this first attemp, I placed it vertically straignt to minimize the supporting materials. If I place it sideways, I was thinking it will be a mass to try to clean the supports.
+                        I also didnt put add addiitonal support, and it got detached from the bed when it's less then half way done. 
+                        The heart was been dragging back and forth on the board while the printer continued to print spaghetti 😂. 
+                    </p>
+                    <p>For the next trial, I will add brim or maybe some support to the base to help it stick better. </p>
+
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment4/Lamp_Part1/HeartTrial1_Cura.png"> 
+                            <span>  </span>
+                            
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment4/Lamp_Part1/TestHeart.jpg"> 
+                            <span>  </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+          
+        </div>
+    </body>
+</html>
