@@ -235,56 +235,82 @@
 
                     
                     
-                    <h3> Test Print the Base</h3>
-                    <p>The concept of the box is that the top can be removed and it will sit on the base. There is a wall on the base to help keep the top in place once it's on.
-                        I modeled a 20mm small one to want to test the concept first. 
+                    <h3> Turn it into mode of a mode</h3>
+                    <p>I started with how I want the final product look like. Then made a mode for the final product (what the silicon mode should look like).
+                        Lastly, flip the extrusion to make the mode of the silicon mode.
                     </p>
 
-                    <p>The issue I ran into is not surprising. The top coulden't fit into the bottom. I will need to make some adjustments on the size in the next round. 
-                        To make the inner width of the top square bigger or make the bottom wall smaller.
-                    </p>
+                    <p>Details steps:</p>
+
+                    <ul>
+                        <li>Draft Analysis: to adjust the top and bottom angle, and set the parting line. Issue: The added draft curve didn't get separated during explode. </li>
+                        <li>Explode: the object so I can separate the object into two pieces. (Didn't work well for me cause it explode with curves that are perpendicular to each other.</li>
+                        <li>BooleanDifference: to separate the original object insteaad and created the parting line in the middle of the heart. </li>
+                        <li>Removed the cap of the cutted side of the surface.</li>
+                        <li>DupeEdge to allow selection of the curves on the cutted side of the surface. </li>
+                        <li>RibbonOffset: Select curves then ribbonoffset (which I later realize that I might not need this because of my parting line is already all at the same level on the z-axis.) 
+                            I also realized the default RibbonOffset is not perfectly following the parting by default. So I used "Add slash" to address it.</li>
+                        <li>Offset curve: twice of the outside ribbon curve. </li>
+                        <li>PlanarSurf: to turn the area betwen two curves into a surface</li>
+                        <li>BlenderSrf: to bridge between two surfaces</li>
+                        <li>Adjust z-axis to be the same if needed. I didn't need this step.</li>
+                        <li>Extrude Curve to the correct direction.</li>
+                    </ul>
 
                     <div class="assemble-img">
                         
                         <div class="image-container">
-                            <img src="assets/assignment4/Lamp_Part1/TestFail1.jpg"> 
+                            <img src="assets/assignment5/mode/ribbonoffset_fail_default.png"> 
+                            <span>ribbon offset</span>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment5/mode/extrudeCurve.png"> 
+                            <span>extrude curve</span>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment5/mode/pouringHole_3.png"> 
+                            <span>add the pouring hole</span>
                             
                         </div>
 
                         <div class="image-container">
-                            <img src="assets/assignment4/Lamp_Part1/TestFail2.jpg"> 
-                            
-                        </div>
-
-                        <div class="image-container">
-                            <img src="assets/assignment4/Lamp_Part1/TestFail3.jpg"> 
-                            
-                        </div>
-
-                        <div class="image-container">
-                            <img src="assets/assignment4/Lamp_Part1/TestWallWidth.jpg"> 
-                            
+                            <img src="assets/assignment5/mode/pouringHold_2.png"> 
+                            <span>pouring hold top view</span>
                         </div>
                         
                     </div>
 
-                    <h3> Test Print the Heart</h3>
-                    <p>I found a solid heart STL on Thingiverse, and decided to do a test print. Given it's a heart shape, I was trying to see how to best place it on the bed. 
-                        For this first attemp, I placed it vertically straignt to minimize the supporting materials. If I place it sideways, I was thinking it will be a mass to try to clean the supports.
-                        I also didnt put add addiitonal support, and it got detached from the bed when it's less then half way done. 
-                        The heart was been dragging back and forth on the board while the printer continued to print spaghetti 😂. 
+                    <h3>Make the silicon mode</h3>
+                    <p> To make sure the two liquid has equal weight, I used a scale. 
                     </p>
-                    <p>For the next trial, I will add brim or maybe some support to the base to help it stick better. </p>
+                    <p>Issue: Becasue I intentionally cut two pouring holds in the print mode, the liquid was leaking out. So I turned the two holes facing each other with a pice of paper in between to prevent it from completely sticky together later. </p>
 
                     <div class="assemble-img">
                         <div class="image-container">
-                            <img src="assets/assignment4/Lamp_Part1/HeartTrial1_Cura.png"> 
+                            <img src="assets/assignment5/mode/Weight_liquid.jpg"> 
                             <span>  </span>
                             
                         </div>
 
                         <div class="image-container">
-                            <img src="assets/assignment4/Lamp_Part1/TestHeart.jpg"> 
+                            <img src="assets/assignment5/mode/weight_liquid_2.jpg"> 
+                            <span>  </span>
+                            
+                        </div>
+                    </div>
+
+                    <p> Silicon Mode Result</p>
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment5/mode/final_mode_1.jpg"> 
+                            <span>  </span>
+                            
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment5/mode/final_mode_2.jpg"> 
                             <span>  </span>
                             
                         </div>
