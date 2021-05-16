@@ -1,0 +1,338 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Molding & Casting</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+        <div class="topnav">
+            <a class="nav-active" href="assignment6.html">molding&Casting</a>
+            <a href="assignment5.html">LAMP</a>
+            <a href="assignment4.html">MESH</a>
+            <a href="assignment3.html">CLIPS</a>
+            <a href="assignment2.html">FIRST 3D PRINTS</a>
+            <a href="assignment1.html">COOKIE CUTTERS</a>
+            <a href="index.html">HOME</a>
+        </div>
+
+        <div class="demo-section">
+            <h1>Heart Shape Mold</h1>
+
+            <img class="project-hero-image" src="assets/assignment6">
+            </div>
+        </div>
+
+       
+        <a class="download" href="assets/assignment6/Heart_Model_5.15.21.3dm" download>Download lamp Clip Rhino File</a>
+
+
+        <div class="documentation">
+            <div class="two-columns">
+                <h2> Modeling the mold of mold</h2>
+
+                <div class="content">
+                    <h3> Adjustment to the Rhino model </h3>
+                    <p>
+                        I adjusted the pouring hold position per Professor Nadya's suggestions:
+                    </p>
+
+                    <ol>
+                        <li>Attach the side half of the cone to the base of each half of the mold of mold.</li>
+                        <li>Move the top half of the cone so that the bigger hole of the cone is connected with the wall of the mold of the mold.  </li>
+                        <li>Moved the cone to the bottom of the hear shape instead of between the two humps. </li>
+                        <li>Scaled up the two models.</li>
+                    </ol>
+                    <p>
+                        It took some time to get the half cone attached to the square mode and make the entire object a closed polysurface. I was able to figure it out in the end using the following metnods:
+                    </p>
+
+                    <ol>
+                        <li>Position the half extruded cone correctly overlap with the heart and outside wall.</li>
+                        <li>BooleanUnion the cone and the square.</li>
+                        <li>Explode the unified object.</li>
+                        <li>Select unwanted surfaces. (i.e., the other half of the cone that sticks out of the square wall. 
+                            Since I turned it into a hollow cone previously, I also had to delete the extra surfaces inside the cone.</li>
+                        <li>Select surface edge of the surfaces that has a gap and you can see the inside part of the object and untrim these surfaces, so that all sides of the square walls are closed. </li>
+                        <li>Join all the surfaces together. (Make sure to select everything, I missed some surfaces when I first joined and was not able to join the already closed polysurface with the left out surfaces. </Li>
+                        <li>Check that the entire object is a closed polysurface</li>
+                    </ol>
+                    
+                               
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment6/mold_topview.png"> 
+                            <span> </span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/assignment6/mold_fontview.png"> 
+                            <span>  </span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/assignment6/slice_mold.png"> 
+                            <span>  </span>
+                        </div>
+                   
+                    </div>
+
+                    <p>New mold of the mold turned out necely! </p>
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment6/casting_silicon/plastic_moldofmold_print.jpg"> 
+                            <span>    </span>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/casting_silicon/Plastic_moldofmold.jpg"> 
+                            <span>    </span>
+                        </div>
+
+                                                       
+
+                    </div>
+
+
+
+                <h3>Silicon Mold Casting </h3>
+                    
+
+                   <p>After adjustecd the 3D model, the newly printed mold of the mold is bigger and no more holes! (Holes in the previous attempt cause oomoo leaked out.)
+                    </p>
+                    
+                    
+
+                    
+                    <div class="image-container">
+                        <video controls src="assets/assignment6/casting_silicon/Pouring_Video.m4v"></video>
+                        <span> Pouring OOMOO into the 3D printed mold.</span>
+                    </div>
+                   
+                   <p>Silicon Result: There was one small hole on one side of the silicon mold, might baused by air bubble, but overall it turned out pretty good. </p>
+
+                    <div class="assemble-img">
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/casting_silicon/silicon_casting.jpg"> 
+                            <span>Waiting for OOMOO to turn into silicon </span>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/casting_silicon/take_silicon_out.jpg"> 
+                            <span> It was a bit challenging to take it out. I tried not to tear the silicon. </span>
+                        </div>
+                        
+                        <div class="image-container">
+                            <img src="assets/assignment6/casting_silicon/silicon_one_small_hole.jpg"> 
+                            <span> One Silicon mold has a small hole. </span>
+                        </div>
+
+                    </div>
+
+                    <p>The finished silicon molds:</p>
+    
+                        <div class="assemble-img">
+                            
+
+                            <div class="image-container">
+                                <img src="assets/assignment6/casting_silicon/two_sides_silicons.jpg"> 
+                                <span> </span>
+                            </div>
+
+                            <div class="image-container">
+                                <img src="assets/assignment6/casting_silicon/two_sides_silicon_2.jpg"> 
+                                <span> </span>
+                            </div>
+                                        
+    
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/casting_silicon/printed_silicon_mold.jpg"> 
+                            <span> </span>
+                        </div>
+
+                                       
+                    
+                    <h3>Making Headshape Plaster using Silicon Molds.</h3>
+                    <p>Challenge: Find the right mix of plaster vs water was challenging because:</p>
+                    <ol>
+                        <li>If the mixed liquid is too thick, it's hard to pour it into the silicon mold as the mold has a relative small hold.</li>
+                        <li>If the mixed liquid is too watery, it's easy to pour, but after a period of time, the water start to separate from the mix. This led to the mold wasn't fully filled up.</li>
+                        <li>The mixed liquid dried out pretty fast, I was struggling to get all of them inside the mold before it starts to get thick. </li>
+                    </ol>
+
+                    <H4>Attempt #1:</H4>
+                    <ol>
+                        <li>Internet said 3:1 ratio for plaster and water, so I followed that initially </li>
+                        <li>Then I realize it was quite watery, didn't turned out to look like how the tutorial showed, so I added more plaster.</li>
+                        <li>I tried to pour the mixed plaster and water into the origianl pouring hole, and it was challenging.</li>
+                        <li>I then tried to cut the outside silicon to make a bigger outside hole to better guide the liquid in through the cone.</li>
+                        <li>I had to keep pressing the sides to get the air bubble out. I was surprise how the air bubble got in.</li>
+                        <li>It took forever to fill it up, and the plater mix is drying out.</li>
+                        <li>I tried to fill in as much as possible, but it was hard to tell if it's close to full or not, it is certainly getting heavier.</li>
+                
+                    </ol>
+                    <p>It turns out that I didn't fill in enough plaster, but good thing is the finished part didn't look too bad when I took it out, and it filled the two humps pretty well. </p>
+
+                    <div class="assemble-img">
+                        
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_1stTry/weight_plaster.jpg"> 
+                            <span>Weight Plaster</span>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_1stTry/secureMold_1.jpg"> 
+                            <span>Secure Silicon Mold: Since it's soft silico, I want to make sure it doens't get squeezed but the rubber band and distorted the shape. So I added cardboard box as the harder surface outside.</span>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_1stTry/fill_plaster.jpg"> 
+                            <span>Filling the plaster in.</span>
+                            
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_1stTry/cut_mold.jpg"> 
+                            <span>Tring to make the entry hold bigger.</span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="assemble-img">
+                        
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_1stTry/result_1.jpg"> 
+                            <span>Result</span>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_1stTry/result_2.jpg"> 
+                            <span>Not completely filled.</span>
+                        </div>
+
+                        
+                        
+                    </div>
+
+
+
+                    <h4>Attempt #2:</h4>
+                    <ol>
+                        <Li>Recut the cardboard box and made new secure board for 4 sides of the mold.</Li>
+                        <li>Cut pouring hole to be slightly bigger.</li>
+                        <li>Made the plaster liquid slighty thiner (used more water).</li>
+                        <li>A few minutes later, I can see water was separated from the plaster.</li>
+                        <li>I tried to use tissue to soke some water out.</li>
+                        <li>Not sure if this means the remaing plaster won't become solid. Debated if I should just soak the water out with tissue and add more new plaster water.</li>
+                        <li>Decided to just abandan this one and redo it. </li>
+                        <li>At this point, I am a bit worry that if I will have enough plaster left to make 4 good mode. </li>
+                    </ol>
+                    
+                    <p>Cut cardboard box to make new 4 side supports</p>
+                    <div class="assemble-img">
+                       
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_2ndTry/Cutting_New_support.jpg"> 
+                            <span>  </span>
+                            
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_2ndTry/cutting_new_support_2.jpg"> 
+                            <span>  </span>
+                            
+                        </div>
+                    </div>
+
+                    <p>Silicon molds with new support</p>
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_2ndTry/silicon_w_new_support.jpg"> 
+                            <span>  </span>
+                            
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_2ndTry/silicon_w_new_support_2.jpg"> 
+                            <span>  </span>
+                            
+                        </div>
+                    </div>
+
+                    <p>Water leak, decided to abandan the model</p>
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_2ndTry/water_came_out.jpg"> 
+                            <span>  </span>
+                            
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_2ndTry/abandan_model2.jpg"> 
+                            <span>  </span>
+                            
+                        </div>
+                    </div>
+
+                    <p>Reflection: Later, I realize I might not need to abandan this model as the extra sample left in the cup did dried out even though initially it also had water separation issue.</p>
+
+
+                    <h4>Attempt #3:</h4>
+                    
+                    <p>The only thing I adjusted this time is the plaster and water ratio. 
+                        I went of the measure and just use the texture to judge if I had the right amount of plaster and water.
+                        It was still challenging to fill it all in.</p>
+                        
+                    
+                    
+                    <p>Result: I filled it until I couldn't see a black hole anymore, but this model also field. 😔</p>
+                    <div class="assemble-img">
+                       
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_3rdTry/Waiting_for_cast.jpg"> 
+                            <span>  </span>
+                            
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_3rdTry/waiting2.jpg"> 
+                            <span>  </span>
+                            
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_3rdTry/Remove_Plaster.jpg"> 
+                            <span>  </span>
+                            
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/assignment6/plaster_model_3rdTry/Result_3rdTry.jpg"> 
+                            <span>  </span>
+                            
+                        </div>
+
+
+
+                       
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+
+          
+        </div>
+    </body>
+</html>

@@ -170,6 +170,7 @@ h4{
 .image-container > video {
   max-width:100%;
   max-height: 100%;
+  transform: rotate (-90deg);
 }
 
 span{
@@ -217,5 +218,6 @@ span{
 
 video{
   width: 100%;
+
 }
 
