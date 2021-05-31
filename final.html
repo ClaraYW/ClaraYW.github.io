@@ -23,7 +23,7 @@
         </div>
 
         <div class="demo-section">
-            <h1>Final Project</h1>
+            <h1>Final Project: Jewelry Organizer</h1>
 
             <img class="project-hero-image" src="assets/final/Project/Hero_Image.jpg">
            
@@ -49,14 +49,49 @@
                     </div>
 
 
-                    <h3>Cap of the Jewelry Box</h3>
+                    <h3>Clips of the Jewelry Box Cap</h3>
                 
                     <p> After a few test print of the original square clipping mechanism, I changed to the flip triangle mechanism inspired by the caliper box. </p>
                     
+                    <div class="image-container">
+                        <img src="assets/final/Project/original_cover_model.png"> 
+                        <span> Original Cover Model</span> 
+                    </div>
+
+                    <div class="assemble-img">
+                      
+                       
+                        <div class="image-container">
+                            <img src="assets/final/Project/test_model_w_original_cover.png"> 
+                            <span> Clip Test Models</span> 
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/final/Project/test_original_clipping_print.jpg"> 
+                            <span> Clip Test Prints</span> 
+                        </div>
+                    </div>
 
                     <div class="image-container">
                         <img src="assets/final/Project/new_clip_sketch.jpg"> 
                         <span> Updated clip Sketch</span> 
+                    </div>
+
+                    <h3>Updated Design</h3>
+                
+                    <p> New Model of the updated design. </p>
+                    
+                    <div class="assemble-img">
+                      
+                        <div class="image-container">
+                            <img src="assets/final/Project/new_model1.png"> 
+                            <span> Updated Model</span> 
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/final/Project/new_model2.png"> 
+                            <span> Updated Model</span> 
+                        </div>
                     </div>
 
                                         
@@ -67,15 +102,15 @@
                 <h2>Work Plan</h2>
 
                 <div class="content">
-                    <h3>Breakdown My Jewelry Components</h3>
+                    <h3>Breakdown of My Jewelry Components</h3>
                     
-                    <p>I sepparated the whole jewelry box into the following parts for modeling and printing: </p>
+                    <p>I sepparated the whole jewelry box into the following parts for modeling, printing and casting as needed.: </p>
                 
                     <ol>
-                        <li>Main Component: Jewelry box frame and necklaces hooks.</li>
-                        <li>Earing Bar: Ear stud holes and earring hook holders. </li>
-                        <li>Ring component: 3D printed box with silicon ring cushion. </li>
-                        <li>Bracelet component: 3D printed container</li>
+                        <li>Main Component: A jewelry box frame and necklaces hooks.</li>
+                        <li>Earing Component: A earing baer with ear stud holes and earring hook holders. </li>
+                        <li>Ring component: A ring box with silicon ring cushion. </li>
+                        <li>Bracelet component: A bracelet container</li>
                         <li>Stretch Goal - Cap Component: A removable cap to close the jewelry box.</li>
                     </ol>
                 </div>
@@ -89,52 +124,145 @@
                                         
                     <h3>CAD Modeling</h3>
                     
-                    <p>The challenging part here is to make the hooks attache to the box. I drew a pipe then distorted the top of the pipe to be thiner and flatter. After I was happy with the shape of one pipe, I duplicated another 7 of them.  </p>
+                    <p>I started by measure my printer and pieces of jewelry to determine the maximum and minimum size of my jewelry box. </p>
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/final/Project/m_bed1.jpg"> 
+                            <span> </span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/final/Project/m_bed2.jpg"> 
+                            <span>  </span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/final/Project/measure_bracelet.jpg"> 
+                            <span>Bracelet is something I planded to have it lay flat, so I measured the mininum width of my bracelets.</span>
+                        </div>
+                   
+                    </div>
+
+
+                    <p>I used "pipe" and "bend" command to creave the necklace hook.</p>
+                    <ul>
+                        <li>First, I drew a curve.</li>
+                        <li>Then, I used "pipe" command to make the root of the curve thick and top of the curve thin.</li>
+                        <li>Next, I used "bend" command to bend the surface that was created with the pipe commend. </li>
+                        <li>Lastly, I used array to create 7 duplicate hooks. </li>
+                    </ul>
                     
+
+
+                    <div class="image-container">
+                        <img src="assets/final/Project/hook.png"> 
+                        <span>Necklace Hooks Model</span> 
+                    </div>
+
+                    <p>I created a 18x18x9cm box with an 1 cm offset based on the maxinum and minimum range I had measured. I then "booleanUnion" the hooks and the base box. </p>
+                    <p>I cut two sliding slots to the side of the box to allow for the earing component to be installed later.   
+                        This design also allows a user to easily remove the earing component for cleaning purposes.</p>
+                    <p>I also curve out 4 squares on each side for the cap to snap on.</p>
                     
+                    <div class="image-container">
+                        <img src="assets/final/Project/Base_F.png"> 
+                        <span>Combined Base Model</span> 
+                    </div>
+
                     <h3> Printing </h3>
-                    <p> Piint had a crack. Then separate into half.</p>
+                    <p> The printing of the base took about 1 day and 22 hours. </p>
+
+                    <div class="image-container">
+                        <img src="assets/final/Project/base_fprint.jpg"> 
+                        <span>Finish Printing the Base</span> 
+                    </div>
+
+                    <p>Issues: </p>
+                    <ol>
+                        <li>After a few hours of good print, I went to bed and wake up find out there is a crack. 
+                            The crack later become bigger as it prints more and by the time it finished printing and when removed it from the bed, it separated into two pieces. 😢 </li>
+                        <li>A few neckless hooks had very fragile tips, and I accidentally broke one of the hooks. I used superglue to stick the broken one back and brushed the glue over the rest of the hooks to strengthen them.</li>
+                    </ol>
 
                     <div class="assemble-img">
                         <div class="image-container"> 
-                            <img src="assets/final/"> 
+                            <img src="assets/final/Project/base_crack.jpg"> 
                             <span>Crack on the main box</span>
                         </div>
 
                         <div class="image-container"> 
-                            <img src="assets/final/"> 
+                            <img src="assets/final/Project/base_separated.jpg"> 
                             <span>Separated into half </span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/final/Project/broken_hook.jpg"> 
+                            <span>Broken Hook </span>
                         </div>
                     </div>
                     
+                
                 </div>
             </div>
 
             <div class="two-columns">
 
                 <h2>Earing Bar</h2>
+
                 <div class="content">
                     <h3>CAD Modeling</h3>
 
-                    <p>I used grasshopper to make the earing holes. Originally I started with drawing a circle, then used array, but I want each set of two ear stud holes to be close together and then array the set. Junchao provided me tips to make the model cleaner and more efficient. </p>
+                    <p>I first measure the size of my earing studs to determine how big the holes need to be and calculate how many pair of stud holes and earing loops I need to evenly fit in the width of the jewelry box.</p>
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/final/Project/m_earstud1.jpg"> 
+                            <span> </span>
+                        </div>
 
-                    <ol>
-                        <li>Start with setting up 2 points. </li>
-                        <li>Draw circle using the 2 points as the center.</li>
-                        <li>Used array to produce 6 pair of solid circles on the X axis.</li>
-                        <li>Bake the solid circles.</li>
-                        <li>Substract these solid circles from the right size rectangle box.  </li>
+                        <div class="image-container"> 
+                            <img src="assets/final/Project/m_earstud2.jpg"> 
+                            <span>  </span>
+                        </div>
 
-                    </ol>
-
-                    <div class="image-container">
-                        <img src="assets/final/Schedule.png"> 
-                        <span> Updated sketch</span> 
+                        <div class="image-container"> 
+                            <img src="assets/final/Project/m_earstud3.jpg"> 
+                            <span></span>
+                        </div>
                     </div>
 
-                    <p>I then used array to make the holes for earring hooks.</p>
-                
+
+                    <p>I used grasshopper to make the earing stud holes. Originally I started with drawing a circle, then used array, but I want each set of two ear stud holes to be close together and then array the set. 
+                        Thanks to Junchao, he taught me how to array based on a set of circles and tips to make the model cleaner and more efficient. </p>
+                    <ol>
+                        <li>I set up 2 points. </li>
+                        <li>I drew two circles using the 2 points as the center.</li>
+                        <li>I used array to produce 6 pair of solid circles on the X axis.</li>
+                        <li>I baked the solid circles.</li>
+                        <li>I substracted these solid circles from the right size rectangle box.  </li>
+                    </ol>
+                    <div class="image-container">
+                        <img src="assets/final/Project/earing_grasshopper_model.png"> 
+                        <span> Model in Grasshopper</span> 
+                    </div>
+
+
+                    <p>For the loops at the bottom of the earing bar, I made 1 open cylinder with 1.3mm wall thickness, then used array to duplicate the rest.</p>
+                    <p>I also added two extrusion on each side of the earing bar to allow the bar get slided into the based of the jewelry box.</p>
+                    <div class="image-container">
+                        <img src="assets/final/Project/earing_model.png"> 
+                        <span> Earing Bar Model</span> 
+                    </div>
+
+
                     <h3>Printing</h3>
+
+                    <p> Prting of the earing bar was smooth. It took about 1 hour 40 minutes.</p>
+
+                    <div class="image-container">
+                        <img src="assets/final/Project/earingbar_print.jpg"> 
+                        <span> Earing Bar Printout</span> 
+                    </div>
+
                 </div>
             </div>
             
@@ -144,16 +272,89 @@
                 <div class="content">
                     <h3>CAD Modeling</h3>
 
-                    <p>Ring component was drew used Rhino.</p>
+                    <p>Thoughts behind the design of this component.</p>
+                    <ol>
+                        <li>Determine the width of the ring box: The design intend is to have half of the bottom for ring and the other half for bracelet. </li>
+                        <li>Determine the height of the ring box: I intend to fill in 60% of the box with silicon ring slots, so that when insert rings inside, there will still be about half of the ring stick outside the silicon slots but all the rings should still be below the full height of the ring box.</li>
+                    </ol>
 
-                    <p>First print failed because I was trying to make a thin wall so that there is more room for rings and also I hope it will print faster. </p>
+                    <p>Modeled the ring component in Rhino.</p>
+                    <ol>
+                        <li>I drew a box with the desired height and width. </li>
+                        <li>Removed the cap of the box.</li>
+                        <li>Used "offsetsrf" command to add 3mm thickness to the wall of the box. </li>
+                        <li>I adjusted the offset distance and box width a few times to make sure that </li>
+                            <ul>
+                                <li>It can fix two equal size box inside the main frame.  </li>
+                                <li>To give is some extra space (0.3mm)to accommodate print tolerance.</li>
+                            </ul>
+                    </ol>
 
                     <div class="image-container">
-                        <img src="assets/final/Schedule.png"> 
-                        <span> Updated sketch</span> 
+                        <img src="assets/final/Project/box_model.png"> 
+                        <span>Ring and Bracelet Boxes Model</span> 
                     </div>
 
                     <h3>Printing</h3>
+                    <p>I started with changing my print bed to glass to see results but end up using the original magnet print bed. It took me long time to adjust bed level and for multiple times to get the better print result. The print time was about 5 hours 38 minutes. </p>
+                    <div class="image-container">
+                        <img src="assets/final/Project/Ring_box_printed_casted.jpg"> 
+                        <span>Ring Component with Silicon Slots</span> 
+                    </div>
+
+                    <p>Issues:</p>
+                    <ol>
+                        <li>The original magnetic print bed has dented parts and also unremovable plastics from previous prints. It impacted the appearance of my printouts. I decided to try to use glass bad for this print.</li>
+                        <li>Glass bed had sever adhesion issue.</li>
+                        <li>Changed back to the magnetic bed. the print failed because the wall was too think, it didn't turn into a box. (I was trying to make a thin wall so that there is more room for rings and also I hope it will print faster.)</li>
+                        <li>I adjusted the wall thickness in the model. The second print had corner adhesion issue. (corner will curve upwards)</li>
+                        <li>I then adjusted my bed again and the third print turned out better, but still has slight upward curve at the corner. </li>
+                    </ol>
+
+                    <div class="assemble-img">
+                        <div class="image-container"> 
+                            <img src="assets/final/Project/glass_bed_adjust.jpg"> 
+                            <span>Adjust Glass Bed</span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/final/Project/glass_bed_test.jpg"> 
+                            <span>Test Print on Glass Bed (Adhesion Issue) </span>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="assemble-img">
+                        
+
+                        <div class="image-container"> 
+                            <img src="assets/final/Project/ring_box_failedprint.jpg"> 
+                            <span> Back to Magnet Bed with bed level issue </span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/final/Project/ring_box_failedprint2.jpg"> 
+                            <span> Wall Thickness Issue </span>
+                        </div>
+                    </div>
+
+                    <h3>Casting</h3>
+                    <p>After I get a good box, I casted OOMOO into the box to make silicon ring slots.</p>
+                    
+                    <div class="assemble-img">
+                        
+
+                        <div class="image-container"> 
+                            <img src="assets/final/Project/ring_box_casting.jpg"> 
+                            <span> Casting the Ring Box </span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/final/Project/ring_box_cut.jpg"> 
+                            <span> Cut Ring Slots </span>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -163,17 +364,26 @@
                 <h2>Bracelet Component</h2>
                 <div class="content">
                     <h3>CAD Modeling</h3>
+                    <p>The bracelet component uses the same model as the ring component.</p>
 
-                    <p>The bracelet component was drew used Rhino.</p>
-
-                    <p>First print failed because I was trying to make a thin wall so that there is more room for rings and also I hope it will print faster. </p>
-
-                    <div class="image-container">
-                        <img src="assets/final/Schedule.png"> 
-                        <span> Updated sketch</span> 
-                    </div>
+                    
 
                     <h3>Printing</h3>
+                    <p>After few more bed adjustments, I was able to print the bracelet component much nicer than the ring component. This print taks about 5 hours, 38 minutes. </p>
+                    
+                    <div class="image-container">
+                        <img src="assets/final/Project/bracelet_box_print.jpg"> 
+                        <span> Bracelet Component Printout</span> 
+                    </div>
+
+                    <h3>Test Size</h3>
+                    <p>My bracelets fits nicely inside. </p>
+
+                    <div class="image-container">
+                        <img src="assets/final/Project/Bracelet_box_wj.jpg"> 
+                        <span> Bracelet Component with Bracelets Inside</span> 
+                    </div>
+                    
                 </div>
 
             </div>
@@ -184,23 +394,167 @@
                 <div class="content">
                     <h3>CAD Modeling</h3>
 
-                    <p>The cap was drewed used Rhino.</p>
+                    <p>The cap model was built in Rhino.</p>
 
-                    <p>First print failed because I was trying to make a thin wall so that there is more room for rings and also I hope it will print faster. </p>
+                    <ol>
+                        <li>First, I drewed a square that was 1mm longer and wider than the jewelry box to allow room for print error within tolerance and release some bend presure of the 4 clips. </li>
+                        <li>Then, I extrude the square to be 6mm. (Looking back, I will make it thiner to save some material and time. (e.g., 4mm)) </li>
+                        <li>I determined the clip size based the length of the indented part on the main component, how much room I want to leave for user to reach the clip to unclip it. </li>
+                        <li>I left small gaps between the clip and the main box to accommodate print errors withint tolerance.</li>
+                        <li>I then drew the rectangle bar and the triangle, duplicate it 4 times, rotate to the correct side,  and combine them with the main cap.</li>
+                    </ol>
 
-                    <div class="image-container">
-                        <img src="assets/final/Schedule.png"> 
-                        <span> Updated sketch</span> 
+                    <p>Issue:</p>
+                    <ul>I was having trouble to make the extruded triangle at the right plane. Junchao taught me how to use "Tab" when draw lines to ensure it's drawing the polyline on the same plane.</ul>
+
+                    <div class="assemble-img">
+                        <div class="image-container">
+                            <img src="assets/final/Project/Cap-model_top.png"> 
+                            <span> Cap Model Top View</span> 
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/final/Project/Cap_modal.png"> 
+                            <span> Cap Model</span> 
+                        </div>
                     </div>
 
-                    <h3>Printing</h3>
+                    <h3>Test Print</h3>
+                    <p>I printed just one clip to test out the size and see if it clips to the main box. The test print result shows taht the clip size is good but the plastic seems weak and easy to break.</p>
+
+                    <div class="assemble-img">
+                        
+
+                        <div class="image-container">
+                            <img src="assets/final/Project/test_clip1.jpg"> 
+                            <span> Test Print Clip</span> 
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/final/Project/test_clip1.2.jpg"> 
+                            <span> Test Print Clip</span> 
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/final/Project/test_clip_snap.jpg"> 
+                            <span> Test Print Snaped well</span> 
+                        </div>
+
+                    </div>
+
+                    <h3>Actual Print</h3>
+                    <p> Printing was not successful. It took about 13 hours and 6 minutes. 1 clip didn't print completed, part of the triangle was missing. 1 clip broke off the main cover as I tried to clip onto the main component.  </p>
+                    <p>As a result, I was not able to put the cover on my main base with all 4 clips on. Even the clip that appear to be nicely printed, they seem fragile when attempt to bend it.</p>
+
+                    <div class="assemble-img">
+                        
+
+                        <div class="image-container">
+                            <img src="assets/final/Project/cap_notbroken.jpg"> 
+                            <span>The good printed clip </span> 
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/final/Project/cap_broken.jpg"> 
+                            <span> The broken Clip</span> 
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/final/Project/cap_broken2.jpg"> 
+                            <span> The same broken clip </span> 
+                        </div>
+                        
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+            <div class="two-columns">
+
+                <h2>Fixing & Assembling</h2>
+                <div class="content">
+                    <h3>Fix the based component with 3D Pen</h3>
+
+                    <p>I thought of using super glue, glue gun, and 3D pen to stick my two parts of the base back together. After some reserach and comparions, I went with super glue plus 3D pen.</p>
+
+                    <div class="image-container">
+                        <img src="assets/final/Project/fix_tools.jpg"> 
+                        <span>Fixing Tools</span> 
+                    </div>
+
+                    <p>Process:</p>
+                    <ol>
+                        <li>Place the bottom of my base on a flat surface. </li>
+                        <li>Apply super glue to the middle part of each side as these are the parts where the top and bottom still touches. </li>
+                        <li>Gentally apply forces and leave it for about 1 minute until I felt the top was not sliding with gental push. </li>
+                        <li>Used my 3D pen with transparent PLA to fill in the caps at the 4 corners. </li>
+                        <li>Used craft knife to remove the extra plastic around the box.</li>
+                    </ol>
+
+                    
+
+                    <div class="image-container">
+                        <video controls src="assets/final/Project/fix_pen_filling.m4v"></video>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="assets/final/Project/fix_craft_knife.jpg"> 
+                        <span> Used craft knife to remove the extra plastic</span> 
+                    </div>
+
+                    <h3>Assembling</h3>
+                    <p>The assumbling was easy. Simply slide the ring bar and the two boxes in. All the jewelry pieces were put on/in their own components pretty easily. 😄</p>
+
+                    <div class="assemble-img">
+                        <div class="image-container"> 
+                            <img src="assets/final/Project/detail1.jpg"> 
+                            <span>Adjust Glass Bed</span>
+                        </div>
+
+                        <div class="image-container"> 
+                            <img src="assets/final/Project/detail2.jpg"> 
+                            <span>Test Print on Glass Bed (Adhesion Issue) </span>
+                        </div>
+
+                        
+                    </div>
+                
+                </div>
+
+            </div>
+
+            <div class="two-columns">
+
+                <h2>Reflection & Next Step</h2>
+                <div class="content">
+                    <h3>Reflection</h3>
+                    <ol>
+                        <li>Use cheaper plastic to print and paint the outside: The silk PLA was not cheep, and I felt a bit of ache when I saw lots of the beautiful shinny color was wasted for the infill. I would prabablly use cheaper plaster to print and just color it with nice paint next time when printing big objects. </li>
+                        <li>Adjust the bed more frequently based on the plastic stickiness on the magnet bed to avoid the bed get indented or have plastic permanently stick on them.</li>
+                        <li>Maybe my jewelry box base componenet wall can be thiner to save some print material and time.</li>
+                        <li>Watch out for temperature change in the house to avoide cracks on a big print.</li>
+                        <li>Better account for the thickness and the flexibility of the materials used clips that required bending. </li>
+                    </ol>
+
+                    <h3>Next Steps</h3>
+                    <ol>
+                        <li>Try the glass bed again with magic glue to see if it sovles the adhesion and upward curing issue with the ring and braclet boxes. </li>
+                        <li>Try out different material and measurement of the clips to fix the cover of the box.</li>
+                    </ol>
+
+                
                 </div>
 
             </div>
             
 
-
+            <h1>🥳 Thank you everyone for a great quarter of digital fabrication experience!</h1>
 
         </div>
-
+        <script src="https://cdn.jsdelivr.net/gh/hellojeffhall/simple-stl-viewer@main/dist/simple-stl-viewer.1.0.1.min.js"></script>
+    </body>
                    
